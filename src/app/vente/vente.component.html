@@ -1,0 +1,37 @@
+<div class="body">
+    <div class="vente">
+    <h2>Merci de remplir ces informations :</h2>
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+        <div>
+            <label for="name">Nom et prénom:</label> <br>
+            <input type="text" id="name" name="name" [(ngModel)]="name" required>
+        </div>
+        <div>
+            <label for="phone">Numéro de téléphone:</label> <br>
+            <input type="text" id="phone" name="phone" [(ngModel)]="phone" required>
+        </div>
+        <div>
+            <label for="adress">Adresse:</label> <br>
+            <input type="text" id="adress" name="adress" [(ngModel)]="adress" required>
+        </div>
+        <div>
+          <label for="title">Titre du livre :</label> <br>
+          <input type="text" id="title" name="title" [(ngModel)]="bookTitle" required>
+        </div>
+        <div> 
+          <label for="title">Categorie :</label> <br>
+          <input type="text" id="categorie" name="categorie" [(ngModel)]="bookCategorie" required>
+        </div>
+        <div>
+            <label for="price">Prix :</label> <br>
+            <input type="text" id="price" name="price" [(ngModel)]="price" required>
+          </div>
+        <div>
+          <label for="coverPhoto">Photo de couverture :</label> <br>
+          <input type="file" id="coverPhoto" name="coverPhoto" (change)="onCoverPhotoSelected($event)" accept="image/*" required>
+        </div> 
+        <br>
+        <button type="submit" [disabled]="!bookTitle || !name || !phone || !adress || !price || !coverPhoto">Vendre</button>
+      </form>
+</div>
+</div>

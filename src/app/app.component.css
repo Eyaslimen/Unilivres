@@ -1,0 +1,35 @@
+.navbar {
+    color: white;
+    background-color: #A6603A; 
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+.navbar-right {
+    margin-top: 8px;
+    width: 35%;
+}
+.navbar-left h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-right a {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+i:hover{
+cursor: pointer;
+}

@@ -1,0 +1,65 @@
+.vertical-navbar {
+    padding-top: 2%;
+    background-color: #a6603a;
+    width: 20%;
+    height:80%;
+    position: fixed;
+    margin-top: 1%;
+    border-radius: 5px;
+    box-shadow: 1px 3px 2px 1px #a79d9773;
+}
+p {
+    color: #EFE3B8;
+    font-size: large;
+    margin: 10px;
+}
+.search-bar input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #A6603A;
+    border-radius: 5px;
+}
+
+.search-bar i {
+    margin-left: 0;
+    position: relative;
+    cursor: pointer;
+    background-color:#EFE3B8 ;
+    color: #A6603A;
+    border-radius: 2px;
+    width: 20px;
+    height: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+.prix input[type="text"] {
+    width: 70px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #A6603A;
+    border-radius: 5px;
+
+}
+
+.categorie select,
+.lieu input[type="text"] {
+    width: 170px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #A6603A;
+    border-radius: 5px;
+}
+.achats {
+    width: 70%;
+    padding-top: 5%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap:5%;
+  }
+  .titre {
+    margin-left: 45%;
+    color:#a6603adf;
+}

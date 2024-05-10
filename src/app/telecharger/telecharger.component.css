@@ -1,0 +1,91 @@
+.vertical-navbar {
+    background-color: #EFE3B8;
+    width: 20%;
+    height:85%;
+    position: fixed;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 5px;
+    padding-left: 1%;
+    box-shadow: 1px 2px 2px 1px #a6603a30;
+}
+p {
+    color: #A6603A;
+    font-size: large;
+    margin: 10px;
+}
+.search-bar input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #A6603A;
+    border-radius: 5px;
+}
+
+.search-bar i {
+    margin-left: 0;
+    position: relative;
+    cursor: pointer;
+    background-color:#A6603A ;
+    color: white;
+    border-radius: 2px;
+    width: 20px;
+    height: 18px;
+    padding: 5px;
+    text-align: center;
+}
+
+form {
+    color: #A6603A;
+}
+form input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #A6603A;
+    border-radius: 5px;
+}
+form label {
+    margin: 10px;
+}
+form input[type="file"] {
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color:rgba(255, 0, 0, 0.799);
+}
+button {
+    margin-left: 15%;
+    margin-top: -10%;
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #a6603adf;
+    font-size: large;
+    color: #EFE3B8;
+    border:#a6603adf;
+    border-radius: 4px;
+}
+button:hover {
+    box-shadow: 2px 2px 3px #583420;}
+
+.categorie select,
+.lieu input[type="text"] {
+    width: 170px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #A6603A;
+    border-radius: 5px;
+}
+.achats {
+    width: 70%;
+    padding-top: 5%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap:5%;
+  }
+  .titre {
+    margin-left: 45%;
+    color:#a6603adf;
+}

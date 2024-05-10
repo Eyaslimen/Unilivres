@@ -1,0 +1,38 @@
+<div class="vertical-navbar">
+    <p>Recherche :</p>
+    <div class="search-bar">
+        <input type="text" placeholder="Rechercher">
+        <i class="fa fa-search"></i>
+    </div>
+    <div class="categorie">
+        <p>Catégorie :</p>
+        <select>
+            <option value="categorie1">Psychologie</option>
+            <option value="categorie2">Catégorie 2</option>
+            <option value="categorie3">Catégorie 3</option>
+            <option value="categorie4">Catégorie 4</option>
+        </select>
+    </div>
+    <p class="ajout">Pouvez vous ajouter un livre ?</p>
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+      <div>
+        <label for="title">Titre du livre :</label> <br>
+        <input type="text" id="title" name="title" [(ngModel)]="bookTitle" required>
+      </div>
+      <div> 
+        <label for="title">Categorie :</label> <br>
+        <input type="text" id="categorie" name="categorie" [(ngModel)]="bookCategorie" required>
+      </div>
+      <div>
+        <label for="coverPhoto">Photo de couverture :</label> <br>
+        <input type="file" id="coverPhoto" name="coverPhoto" (change)="onCoverPhotoSelected($event)" accept="image/*" required>
+      </div> 
+      <div>
+        <label for="pdfFile">Fichier PDF du livre :</label> <br>
+        <input type="file" id="pdfFile" name="pdfFile" (change)="onPdfFileSelected($event)" accept=".pdf" required>
+      </div> <br>
+      <button type="submit" [disabled]="!bookTitle || !coverPhoto || !pdfFile">Ajouter</button>
+    </form>
+</div>
+<h1 class="titre">Télécharger vos livres préferées</h1>
+<div class="achats"><app-ltelecharger *ngFor="let livreTelecharger of LivreListe" [livreTelecharger]="livreTelecharger" class="livre"></app-ltelecharger></div>

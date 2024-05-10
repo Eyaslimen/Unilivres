@@ -1,0 +1,39 @@
+.service {
+    padding-top: 3%;
+    background-color: #efe3b8;
+    width:100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+.titre {
+    text-align: center;
+    color:#a6603adf;
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 0% 10% 0%;
+}
+.sJ {
+    width: 18%;
+    margin-left: 8%;
+    background-color: #a6603adf;
+    box-shadow: 5px 1px 10px 1px #a6603a6f;
+    color: white;
+    border-radius: 20%;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+button {
+    cursor: pointer;
+    text-align: center;
+    margin-left: 32%;
+    background-color: #efe3b8ab;
+    font-size: large;
+    color: #a6603adf;
+    border:#a6603adf;
+    border-radius: 4px;
+}
+button:hover {
+    box-shadow: 2px 2px 3px #583420;}

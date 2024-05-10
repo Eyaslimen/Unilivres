@@ -1,0 +1,7 @@
+<div class="livre" >
+    <img src={{livreTelecharger.image}} alt="">
+    <div class="info">
+    <h6>Titre :{{livreTelecharger.titre}}</h6>
+    <h6>Categorie :{{livreTelecharger.categorie}}</h6> </div>
+    <button (click)="downloadPdf(livreTelecharger.titre)">Télécharger</button>
+</div>

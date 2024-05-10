@@ -1,0 +1,83 @@
+.signup-container {
+    background-color: #EFE3B8;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: slideIn 1s ease-out forwards;
+    width: 50%;
+    margin: 5% 20% 20% 20%;
+    position: absolute;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.signup-container label {
+    color: #583420;
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+}
+.signup-container h2 {
+    color: #583420;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.signup-container input[type="submit"],
+.signup-container .register-link {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-container input[type="submit"] {
+    background-color: #fff;
+    color: #a6603adf;
+}
+
+.signup-container input[type="submit"]:hover {
+    background-color: #a6603adf;
+    color: #fff;
+}
+
+.signup-container .register-link {
+    color: #583420;
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5%;
+    padding: 5px;
+    margin-top: 4%;
+    background-color: #a6603adf;
+    font-size: large;
+    color: #EFE3B8;
+    border:#a6603adf;
+    border-radius: 4px;
+}
+button:hover {
+    box-shadow: 2px 2px 3px #583420;}
